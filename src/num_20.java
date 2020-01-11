@@ -16,6 +16,7 @@ public class num_20 {
                 }
             }
         }
+        
         return stack.size()==0;//thinking:the use of hashmap to make the searching process faster.
     }//problem:occupation of internal storage is too high.
     public boolean isSym(char ch1,char ch2){
