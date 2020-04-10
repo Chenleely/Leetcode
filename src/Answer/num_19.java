@@ -1,3 +1,5 @@
+package Answer;
+
 public class num_19 {
        /* ListNode dummy = new ListNode(0);
         dummy.next = head;//解法一，采用两次扫描

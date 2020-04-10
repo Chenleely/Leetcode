@@ -1,14 +1,17 @@
+package Answer;
+
 import java.util.Random;
 public class num_912 {
     public static final Random RANDOM=new Random();
-    public static void main(String[] args) {
+    /*ublic static void main(String[] args) {
         num_912 n=new num_912();
         int test[]={5,2,3,1};
         n.QuickSort(test,0,test.length-1);
         for(int i=0;i<test.length;i++)
         System.out.println(test[i]);
 
-    }
+    }*/
+    //quicksort
     public int[] QuickSort(int[] nums,int left,int right){
         int i,j;
         if(right-left>0){
@@ -37,7 +40,8 @@ public class num_912 {
         return lt;
     }
 
-    /*public int[] ShellSort(int[] nums){
+    //shellsort Increment=1 2 4 8 ....
+    public int[] ShellSort(int[] nums){
         int Increment,length,tmp,i,j;
         length=nums.length;
         for(Increment=length/2;Increment>0;Increment/=2){
@@ -49,12 +53,14 @@ public class num_912 {
             }
         }
         return nums;
-    }*/
+    }
     public static void  swap(int[] nums,int i,int j){
             int tmp;
             tmp=nums[i];
             nums[i]=nums[j];
             nums[j]=tmp;
     }
+
+    //mergesort
 
 }
