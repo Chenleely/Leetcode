@@ -15,7 +15,7 @@ public class num_1143 {
         }
         for(i=1;i<=m;i++){
             for(j=1;j<=n;j++){
-                if(a[i-1]==b[j-1]){
+                if(a[i-1]==b[j-1]){//由于curr[][]的0行0列没有使用，curr[][]的第i行元素对应str1的第i-1个元素
                     curr[i][j]=curr[i-1][j-1]+1;
                 }else if(curr[i-1][j]>=curr[i][j-1]){
                     curr[i][j]=curr[i-1][j];
