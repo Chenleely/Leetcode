@@ -47,10 +47,5 @@ public class num_287 {
             return low;*/
     }
 
-    public static void main(String[] args) {
-        int[] test={3,1,3,4,2};
-        num_287 n=new num_287();
-        int  key=n.findDuplicate(test);
-        System.out.print(key);
-    }
+
 }
