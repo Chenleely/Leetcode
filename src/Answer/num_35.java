@@ -1,4 +1,4 @@
-package Answer;
+package answer;
 
 public class num_35 {
     //二分查找（非递归实现）
@@ -33,12 +33,6 @@ public class num_35 {
             }
         }
         return right-1;
-    }
-
-    public static void main(String[] args) {
-        int[] test={1,3,5,6};
-        int lenth=new num_35().searchInsert1(test,2);
-        System.out.print(lenth);
     }
 
 }

@@ -1,4 +1,4 @@
-package Answer;
+package answer;
 
 import Algrithms.Sort;
 import java.util.*;

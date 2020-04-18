@@ -1,4 +1,4 @@
-package Algrithms;
+package algrithms;
 import java.util.Random;
 
 public class Sort {
@@ -11,7 +11,7 @@ public class Sort {
     public static final Random RANDOM = new Random(25);
     private static final int N=200000;
 
-    /*public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Sort n = new Sort();
         int[] test = new int[N];
         int[] temp=new int[test.length];
@@ -20,9 +20,9 @@ public class Sort {
             test[j] = RANDOM.nextInt(20000000);
         }
         long starttime=System.currentTimeMillis();
-        //n.MergeSort(test,0,test.length-1,temp);
+        n.MergeSort(test,0,test.length-1,temp);
         //n.QuickSort(test,0,test.length-1);
-        n.InsertSort(test);
+        //n.InsertSort(test);
         for (int i = 0; i < test.length; i++)
             System.out.println(test[i]);
         long endtime=System.currentTimeMillis();

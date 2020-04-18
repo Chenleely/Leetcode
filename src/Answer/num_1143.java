@@ -1,4 +1,4 @@
-package Answer;
+package answer;
 
 public class num_1143 {
     public int longestCommonSubsequence(String text1, String text2) {

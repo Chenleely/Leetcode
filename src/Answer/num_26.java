@@ -1,4 +1,4 @@
-package Answer;
+package answer;
 
 public class num_26 {
     //采用快慢指针，i用于指示当前最后一个元素，j扫描数组元素，如果碰到有与i指向的元素相等，则j跳过，否则指定i的下一个元素为j目前指向，最后返回i+1即为数组长度

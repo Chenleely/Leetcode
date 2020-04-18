@@ -1,5 +1,4 @@
-package Answer;
-
+package answer;
 import java.util.Queue;
 import java.util.Stack;
 

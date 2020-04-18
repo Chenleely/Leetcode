@@ -1,4 +1,4 @@
-package Answer;
+package answer;
 
 public class num_11 {
     public int maxArea(int[] height) {
