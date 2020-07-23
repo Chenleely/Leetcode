@@ -1,6 +1,6 @@
 package answer;
 
-import Algrithms.Sort;
+import algrithms.Sort;
 import java.util.*;
 import java.lang.reflect.Array;
 
