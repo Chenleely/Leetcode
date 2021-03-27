@@ -13,7 +13,7 @@ public class ThreeSum {
         int n=nums.length;
         int i,j,index;
         for(i=0;i<n&&nums[i]<=0;i++){
-            if(i>0&&nums[i]==nums[i-1]){continue;}
+            if(i>0&&nums[i]==nums[i-1]){continue;}//第一次去重
             index=i+1;
             j=n-1;
             while(index<j){
@@ -21,7 +21,7 @@ public class ThreeSum {
                 if(sum==0){
                     result.add(Arrays.asList(nums[i],nums[index],nums[j]));
                     while(index<j&&nums[index]==nums[index+1]){index++;}
-                    while(index<j&&nums[j]==nums[j-1]){j--;}
+                    while(index<j&&nums[j]==nums[j-1]){j--;}//第二次去重
                     index++;
                     j--;
                 }else if(sum>0){
