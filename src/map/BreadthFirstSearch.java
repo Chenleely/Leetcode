@@ -7,13 +7,8 @@ import java.util.Queue;
 
 //广度优先搜索
 public class BreadthFirstSearch {
-    /* 
-        采用优先队列实现（先入先出队列）
-        首先将起点加入队列，然后重复以下步骤直到队列为空：
-            取队列的下一个顶点v并标记它
-            将与v相邻的所有未标记的顶点加入队列
-    */  
-    //利用bfs寻找最短路径（长度为1）
+   
+    //利用bfs寻找单点最短路径（长度为1）
     private boolean[] marked;//到某点的最短路径是否已知
     private int[] edgeTo;//记录每个与s相连的结点回到s的路径
     private final int s;//起点
@@ -25,6 +20,12 @@ public class BreadthFirstSearch {
         this.s=s;
         bfs(graphs, s);
     }
+     /* 
+        采用优先队列实现（先入先出队列）
+        首先将起点加入队列，然后重复以下步骤直到队列为空：
+            取队列的下一个顶点v并标记它
+            将与v相邻的所有未标记的顶点加入队列
+    */  
     private void bfs(Graphs graphs,int s){
         Queue<Integer> queue=new LinkedList<Integer>();
         marked[s]=true;
